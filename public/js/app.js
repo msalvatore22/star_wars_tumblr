@@ -1,6 +1,5 @@
 M.AutoInit();
 
-
 let closeButton = document.querySelector(".close-button")
 let flashPanel = document.querySelector(".flash")
 

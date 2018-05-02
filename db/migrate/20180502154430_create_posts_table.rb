@@ -4,8 +4,8 @@ class CreatePostsTable < ActiveRecord::Migration[5.2]
       t.string :title
       t.string :author
       t.string :content
-      t.datetime :created_at
-      t.datetime :updated_at
+      t.timestamp :created_at
+      t.integer :user_id
     end
   end
 end

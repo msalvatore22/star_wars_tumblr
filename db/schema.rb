@@ -17,14 +17,17 @@ ActiveRecord::Schema.define(version: 2018_05_02_154430) do
     t.string "author"
     t.string "content"
     t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.datetime "birthday"
     t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
 end

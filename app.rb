@@ -54,8 +54,12 @@ end
 
 post "/sign-up" do
   @user = User.create(
+    first_name: params[:first_name],
+    last_name: params[:last_name],
     username: params[:username],
-    password: params[:password]
+    password: params[:password],
+    email: params[:email],
+    birthday: params[:birthday]
   )
 
   # this line does the signing in
@@ -67,6 +71,21 @@ post "/sign-up" do
   # assuming this page exists
   redirect "/"
 end
+
+get "/write-post" do
+  erb :write_post
+end
+
+post '/write-post' do
+  @post = Post.create(
+    title: params[:title],
+    content: params[:content]
+  )
+  redirect "/"
+end
+
+
+
 
 # when hitting this get path via a link
 #   it would reset the session user_id and redirect
