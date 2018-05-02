@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+html,
 body {
   font-family: 'Do Hyeon', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.landing-page {
+  background-image: url("images/darth-vader-background.jpg");
+  height: 1000px;
+}
+
+.landing-page h1 {
+  margin-top: 300px;
+  color: #0091E3;
 }
 
 ul {
