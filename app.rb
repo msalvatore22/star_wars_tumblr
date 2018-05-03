@@ -5,7 +5,15 @@ require "./models"
 
 enable :sessions
 
-set :database, "sqlite3:app.db"
+configure :development do
+  set :database, "sqlite3:[name of database file]"
+end
+
+configure :production do
+  # this environment variable is auto generated/set by heroku
+  #   check Settings > Reveal Config Vars on your heroku app admin panel
+  set :database, ENV["DATABASE_URL"]
+end
 
 get "/" do
   if session[:user_id]
@@ -31,7 +39,7 @@ post "/sign-in" do
     session[:user_id] = @user.id
 
     # lets the user know that something is wrong
-    flash[:info] = "You have been signed in"
+    # flash[:info] = "You have been signed in"
 
     # redirects to the home page
     redirect "/"
@@ -66,22 +74,28 @@ post "/sign-up" do
   session[:user_id] = @user.id
 
   # lets the user know they have signed up
-  flash[:info] = "Thank you for signing up"
+  # flash[:info] = "Thank you for signing up"
 
   # assuming this page exists
   redirect "/"
 end
 
 get "/create-post" do
+  if session[:user_id]
   erb :create_post
+  else
+  redirect "/"
+  end
 end
 
 post '/create-post' do
+
   @post = Post.create(
     title: params[:title],
     content: params[:content]
   )
   redirect "/"
+
 end
 
 
