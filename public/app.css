@@ -36,8 +36,52 @@ body {
   color: #4caf50;
 }
 
-.sign-up-page a {
-  margin-top: 10%;
+.sign-in-page {
+  background-image: url("images/storm-trooper-background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 1000px;
+}
+
+.sign-in-page h4 {
+  margin-top: 200px;
+  color: #CAE1E9;
+}
+
+.home-page {
+  background-image: url("images/death-star.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 1000px;
+}
+
+
+.create-post-page {
+  background-image: url("images/millennium-falcon.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 1000px;
+}
+
+.create-post-page h4 {
+  color: #76C9C6;
+  margin-top: 200px;
+}
+
+.input-field>label {
+  color: #F6FFFE;
 }
 
 ul {

@@ -72,11 +72,11 @@ post "/sign-up" do
   redirect "/"
 end
 
-get "/write-post" do
-  erb :write_post
+get "/create-post" do
+  erb :create_post
 end
 
-post '/write-post' do
+post '/create-post' do
   @post = Post.create(
     title: params[:title],
     content: params[:content]
