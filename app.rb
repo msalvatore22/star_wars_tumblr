@@ -6,7 +6,7 @@ require "./models"
 enable :sessions
 
 configure :development do
-  set :database, "sqlite3:[name of database file]"
+  set :database, "sqlite3:app.db"
 end
 
 configure :production do
@@ -15,8 +15,10 @@ configure :production do
   set :database, ENV["DATABASE_URL"]
 end
 
+
 get "/" do
   if session[:user_id]
+    @posts = Post.all
     erb :signed_in_homepage
   else
     erb :signed_out_homepage
@@ -89,13 +91,24 @@ get "/create-post" do
 end
 
 post '/create-post' do
-
+  @user = User.find(session[:user_id])
   @post = Post.create(
+    user_id: @user.id,
+    author: @user.username,
     title: params[:title],
     content: params[:content]
   )
   redirect "/"
+end
 
+get "/profile" do
+
+  if session[:user_id]
+    @user = User.find(session[:user_id])
+  erb :profile
+  else
+  redirect "/"
+  end
 end
 
 
@@ -113,3 +126,4 @@ get "/sign-out" do
   
   redirect "/"
 end
+
