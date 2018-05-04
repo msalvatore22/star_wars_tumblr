@@ -111,6 +111,28 @@ get "/profile" do
   end
 end
 
+get "/settings" do
+  if session[:user_id]
+    erb :settings 
+  else
+  redirect "/"
+  end
+end 
+
+
+post "/settings" do
+    @user = User.find(session[:user_id])
+
+  if @user.username == params[:username] && @user.password == params[:password]
+    @user.posts.each do |post|
+       Post.destroy(post.id)
+    end
+    User.destroy(session[:user_id])
+    session[:user_id] = nil
+    flash[:info] = "You have deleted your account"
+    redirect "/"
+  end
+end
 
 
 
