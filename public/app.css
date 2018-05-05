@@ -51,13 +51,13 @@ body {
 
 #title,
 #content {
-  color: #F9FF00;
+  color: #4D556F;
 }
 
 #title:focus,
 #content:focus {
-  border-bottom: 1px solid #F9FF00;
-  box-shadow: 0 1px 0 0 #F9FF00;
+  border-bottom: 1px solid #4D556F;
+  box-shadow: 0 1px 0 0 #4D556F;
 }
 
 .row .input-field input:focus {
@@ -185,7 +185,6 @@ body {
   overflow-y: hidden;
 }
 
-
 .create-post-page {
   background-image: url("images/millennium-falcon.jpg");
   background-attachment: fixed;
@@ -198,9 +197,26 @@ body {
 }
 
 .create-post-page h4 {
-  color: #EEFF00;
+  color: #4D556F;
   margin-top: 200px;
-  border-bottom: 1px solid #EEFF00;
+  border-bottom: 1px solid #4D556F;
+}
+
+.settings-page {
+  background-image: url("images/R2D2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+}
+
+.settins-page h4 {
+  color: #40408F;
+  margin-top: 200px;
+  border-bottom: 1px solid #40408F;
 }
 
 .input-field>label {
