@@ -94,7 +94,6 @@ post '/create-post' do
   @user = User.find(session[:user_id])
   @post = Post.create(
     user_id: @user.id,
-    author: @user.username,
     title: params[:title],
     content: params[:content]
   )
@@ -129,8 +128,13 @@ post "/settings" do
     end
     User.destroy(session[:user_id])
     session[:user_id] = nil
-    flash[:info] = "You have deleted your account"
+    flash[:warning] = "You have deleted your account"
     redirect "/"
+
+  else 
+    flash[:warning] = "Your username or password is incorrect"
+    redirect "/settings"
+
   end
 end
 

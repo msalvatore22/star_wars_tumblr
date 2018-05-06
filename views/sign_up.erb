@@ -5,12 +5,12 @@
     
 
     <form class="sign-up-form" action="/sign-up" method="post">
-      <input type="text" name="first_name" id="first_name" placeholder="First Name">
-      <input type="text" name="last_name" id="last_name" placeholder="Last Name">
-      <input type="text" name="username" id="username" placeholder="Username">
-      <input type="password" name="password" id="password" placeholder="Password">
-      <input type="email" name="email" id="email" placeholder="Email">
-      <input type="date" name="birthday" id="birthday" placeholder="Birthday">
+      <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+      <input type="text" name="last_name" id="last_name" placeholder="Last Name" required>
+      <input type="text" name="username" id="username" placeholder="Username" required>
+      <input type="password" name="password" id="password" placeholder="Password" required>
+      <input type="email" name="email" id="email" placeholder="Email" required>
+      <input type="date" name="birthday" id="birthday" placeholder="Birthday" required>
       <input type="submit" value="Sign-Up">
       <p><a class="go-to-sign-in-link" href="/sign-in" />Go to Sign-In Page</a></p>
     </form>
