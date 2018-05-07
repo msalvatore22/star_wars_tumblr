@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_04_220951) do
+ActiveRecord::Schema.define(version: 2018_05_06_231918) do
 
   create_table "posts", force: :cascade do |t|
     t.string "title"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2018_05_04_220951) do
     t.string "email"
     t.datetime "birthday"
     t.datetime "created_at"
+    t.string "image_url"
   end
 
 end

@@ -1,6 +1,12 @@
 <div class="row settings-page">
-  <div class="col s2 offset-s5">
-  
+  <div class="col s4">
+  <h4 class="sign-in-h4 offset-s1">Account Info</h4>
+    <h5><%= @user.first_name %></h5>
+    <h5><%= @user.last_name %></h5>
+    <h5><%= @user.username %></h5>
+    <h5><%= @user.email %></h5>
+  </div>
+  <div class="col s4">
     <h4 class="sign-in-h4">Delete Your Account</h4>
     
     <form action="/settings" method="post">

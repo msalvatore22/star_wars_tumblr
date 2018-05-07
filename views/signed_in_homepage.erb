@@ -1,12 +1,19 @@
 
 <div class="row home-page">
-  <div class="col s4 offset-s4">
+  <div class="col s6 offset-s3">
     <% @posts.reverse.each do |post| %>
-      <div class="card">
-        <div class="card-content">
-          <h3><i class="material-icons post-icon">title :</i><%= post.title %></h3>
-          <h4><i class="material-icons post-icon">account_circle :</i><%= post.user.username %></h4>
-          <h5><i class="material-icons post-icon">message :</i><%= post.content %></h5>
+      <div class="card horizontal valign-wrapper">
+        <div class="card-image">
+          <% if post.user.image_url %>
+            <img src="<%= post.user.image_url %>">
+          <% end %>
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <h3><i class="material-icons post-icon">title :</i><%= post.title %></h3>
+            <h4><i class="material-icons post-icon">account_circle :</i><%= post.user.username %></h4>
+            <h5><i class="material-icons post-icon">message :</i><%= post.content %></h5>
+          </div>
         </div>
       </div>
     <% end %>
