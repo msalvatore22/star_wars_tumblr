@@ -15,7 +15,7 @@ body {
 }
 
 .nav-wrapper {
-  background-image: url("images/space.png");
+  background-image: url("../images/space.png");
 }
 
 .nav-wrapper a {
@@ -34,7 +34,7 @@ body {
 /*--------------------------------- Landing-Page ---------------------------*/
 
 .landing-page {
-  background-image: url("/images/darth-vader-background.jpg");
+  background-image: url("../images/darth-vader-background.jpg");
   height: 100vh;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 .sign-in-page {
-  background-image: url("/images/storm-trooper-background.jpg");
+  background-image: url("../images/storm-trooper-background.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,7 +95,7 @@ body {
 /*------------------------------- Sign-Up -----------------------------------*/
 
 .sign-up-page {
-  background-image: url("/images/yoda-background.jpg");
+  background-image: url("../images/yoda-background.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -154,7 +154,7 @@ body {
 }
 
 .create-post-page {
-  background-image: url("/images/millennium-falcon.jpg");
+  background-image: url("../images/millennium-falcon.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -205,7 +205,7 @@ body {
 
 
 .home-page {
-  background-image: url("/images/Rogue-One-Death-Star.jpg");
+  background-image: url("../images/Rogue-One-Death-Star.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -249,7 +249,7 @@ h1 {
 /* ----------------------------- Profile --------------------------------------- */
 
 .profile {
-  background-image: url("/images/duel.png");
+  background-image: url("../images/duel.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -283,7 +283,7 @@ h1 {
 /* --------------------------- Other Users Posts ------------------------------ */
 
 .user-profile {
-  background-image: url("/images/duel.png");
+  background-image: url("../images/duel.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -319,7 +319,7 @@ h1 {
 /* --------------------------- Settings-Page ----------------------------------- */
 
 .settings-page {
-  background-image: url("/images/bb8.jpg");
+  background-image: url("../images/bb8.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -370,7 +370,7 @@ h1 {
 }
 
 .card {
-  background-image: url("/images/space.jpg");
+  background-image: url("../images/space.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
