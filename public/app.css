@@ -265,19 +265,19 @@ h1 {
 }
 
 .profile-h3 {
-  color: #81d4fa;
-  border-bottom: 1px solid #ef5350;
+  color: #ef5350;
+  border-bottom: 1px solid #81d4fa;
 }
 
 #profile_title,
 #profile_content {
-  color: #81d4fa;
+  color: #ef5350;
 }
 
 #profile_title:focus,
 #profile_content:focus {
-  border-bottom: 1px solid  #ef5350;
-  box-shadow: 0 1px 0 0 #ef5350;
+  border-bottom: 1px solid  #81d4fa;
+  box-shadow: 0 1px 0 0 #81d4fa;
 }
 
 /* --------------------------- Settings-Page ----------------------------------- */
@@ -301,7 +301,7 @@ h1 {
 }
 
 .settings-h5 {
-  color: #ff9100;
+  color: #F6FFFE;
 }
 
 .input-field>label {

@@ -9,7 +9,7 @@
     </form>
     <% @user.posts.all.reverse.each do |post| %>
       <div class="card horizontal valign-wrapper">
-        <div class="card-image">
+        <div class="card-image hide-on-small-only">
           <% if @user.image_url %>
             <img src="<%= @user.image_url %>">
           <% end %>
