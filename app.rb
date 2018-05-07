@@ -25,6 +25,16 @@ get "/" do
   end
 end
 
+post "/" do
+  @user = User.find(session[:user_id])
+  @post = Post.create(
+    user_id: @user.id,
+    title: params[:title],
+    content: params[:content]
+  )
+  redirect "/"
+end
+
 # displays sign in form
 get "/sign-in" do
   erb :sign_in
@@ -109,6 +119,22 @@ get "/profile" do
   redirect "/"
   end
 end
+
+post "/profile" do
+  @user = User.find(session[:user_id])
+  @post = Post.create(
+    user_id: @user.id,
+    title: params[:title],
+    content: params[:content]
+  )
+  redirect "/"
+end
+
+
+# get "profile/:user_id"
+#   @user = User.find(:user_id)
+# end
+
 
 get "/settings" do
   if session[:user_id]

@@ -217,6 +217,7 @@ body {
 }
 
 h1 {
+  margin-top: 50px;
   color: #F9FF00;
 }
 
@@ -226,6 +227,22 @@ h1 {
   margin-left: 35px;
   padding-bottom: 5px;
   transition: border 0.2s;
+}
+
+.home-page-h3 {
+  color: #F9FF00;
+  border-bottom: 1px solid #F9FF00;
+}
+
+#home_title,
+#home_content {
+  color: #F9FF00;
+}
+
+#home_title:focus,
+#home_content:focus {
+  border-bottom: 1px solid  #F9FF00;
+  box-shadow: 0 1px 0 0 #F9FF00;
 }
 
 
@@ -243,6 +260,26 @@ h1 {
   overflow-y: hidden;
 }
 
+.profile-h1 {
+  color: #81d4fa;
+}
+
+.profile-h3 {
+  color: #81d4fa;
+  border-bottom: 1px solid #ef5350;
+}
+
+#profile_title,
+#profile_content {
+  color: #81d4fa;
+}
+
+#profile_title:focus,
+#profile_content:focus {
+  border-bottom: 1px solid  #ef5350;
+  box-shadow: 0 1px 0 0 #ef5350;
+}
+
 /* --------------------------- Settings-Page ----------------------------------- */
 
 .settings-page {
@@ -257,14 +294,37 @@ h1 {
   overflow-y: hidden;
 }
 
-.settins-page h4 {
-  color: #40408F;
-  margin-top: 200px;
-  border-bottom: 1px solid #40408F;
+.settings-h4 {
+  color: #ff9100;
+  border-bottom: 1px solid #ff9100;
+  margin-top: 50px;
+}
+
+.settings-h5 {
+  color: #ff9100;
 }
 
 .input-field>label {
   color: #F6FFFE;
+}
+
+#settings_first_name:focus,
+#settings_last_name:focus,
+#settings_username:focus,
+#settings_password:focus,
+#settings_email:focus,
+#settings_image_url {
+  border-bottom: 1px solid #ff9100;
+  box-shadow: 0 1px 0 0 #ff9100;
+}
+
+#settings_first_name,
+#settings_last_name,
+#settings_username,
+#settings_password,
+#settings_email,
+#settings_image_url {
+  color:#F6FFFE;
 }
 
 /* ---------------------------- Card ---------------------------------- */
