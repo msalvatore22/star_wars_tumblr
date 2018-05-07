@@ -1,10 +1,10 @@
-<div class="row profile">
+<div class="row user-profile">
   <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-    <h1 class="profile-h1">My Profile</h1>
-    <h3 class="profile-h3">Create Post</h3>
+    <h1 class="user-profile-h1"><%= @user.username %></h1>
+    <h3 class="user-profile-h3">Create Post</h3>
     <form action="/create-post" method="post">
-      <input type="text" name="title" id="profile_title" placeholder="Title" required>
-      <input type="text" name="content" id="profile_content" placeholder="Write Post Here" required>
+      <input type="text" name="title" id="user-profile_title" placeholder="Title" required>
+      <input type="text" name="content" id="user-profile_content" placeholder="Write Post Here" required>
       <input type="submit" value="Go">
     </form>
     <% @user.posts.all.reverse.each do |post| %>
@@ -25,6 +25,3 @@
     <% end %>
   </div>
 </div>
-
-
- 

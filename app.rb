@@ -19,6 +19,7 @@ end
 get "/" do
   if session[:user_id]
     @posts = Post.all
+    @user = User.all
     erb :signed_in_homepage
   else
     erb :signed_out_homepage
@@ -131,9 +132,11 @@ post "/profile" do
 end
 
 
-# get "profile/:user_id"
-#   @user = User.find(:user_id)
-# end
+get "/user-profile/:id" do
+  @user = User.find(params[:id])
+  @posts = User.find(params[:id]).posts
+  erb :other_users_posts
+end 
 
 
 get "/settings" do

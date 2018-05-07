@@ -19,6 +19,7 @@
             <h3><i class="material-icons post-icon">title :</i><%= post.title %></h3>
             <h4><i class="material-icons post-icon">account_circle :</i><%= post.user.username %></h4>
             <h5><i class="material-icons post-icon">message :</i><%= post.content %></h5>
+             <a href="/user-profile/<%= post.user.id %>">Go to profile</a>
           </div>
         </div>
       </div>
