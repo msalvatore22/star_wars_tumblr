@@ -298,21 +298,6 @@ h1 {
   color: #81d4fa;
 }
 
-.user-profile-h3 {
-  color: #ef5350;
-  border-bottom: 1px solid #81d4fa;
-}
-
-#user-profile_title,
-#user-profile_content {
-  color: #ef5350;
-}
-
-#user-profile_title:focus,
-#user-profile_content:focus {
-  border-bottom: 1px solid  #81d4fa;
-  box-shadow: 0 1px 0 0 #81d4fa;
-}
 
 
 

@@ -128,7 +128,7 @@ post "/profile" do
     title: params[:title],
     content: params[:content]
   )
-  redirect "/"
+  redirect "/profile"
 end
 
 
