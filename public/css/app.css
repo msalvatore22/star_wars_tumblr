@@ -321,9 +321,6 @@ h1 {
   margin-top: 50px;
 }
 
-.settings-h5 {
-  color: #F6FFFE;
-}
 
 .input-field>label {
   color: #F6FFFE;
@@ -347,6 +344,12 @@ h1 {
 #settings_image_url {
   color:#F6FFFE;
 }
+
+label {
+  color: #ff9100;
+  font-size: 100%;
+}
+
 
 /* ---------------------------- Card ---------------------------------- */
 
