@@ -1,12 +1,26 @@
 <div class="row settings-page">
-  <div class="col s4">
-  <h4 class="sign-in-h4 offset-s1">Account Info</h4>
+  <div class="col l4 offset-l4">
+  <h4 class="sign-in-h4">Account Info</h4>
     <h5><%= @user.first_name %></h5>
     <h5><%= @user.last_name %></h5>
     <h5><%= @user.username %></h5>
     <h5><%= @user.email %></h5>
-  </div>
-  <div class="col s4">
+
+     <h4 class="sign-in-h4">Update Your Account</h4>
+
+     <form action="/settings" method="post">
+      <input type="hidden" name="_method" value="PUT">
+      <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+      <input type="text" name="last_name" id="last_name" placeholder="Last Name" required>
+      <input type="text" name="username" id="username" placeholder="Username" required>
+      <input type="password" name="password" id="password" placeholder="Password" required>
+      <input type="email" name="email" id="email" placeholder="Email" required>
+      <input type="text" name="image_url" id="image_url" placeholder="Add a profile picture by pasting an image url here." required>
+      <input type="submit" value="Update">
+    </form>
+  
+  <input type="hidden" name="_method" value="PUT">
+
     <h4 class="sign-in-h4">Delete Your Account</h4>
     
     <form action="/settings" method="post">

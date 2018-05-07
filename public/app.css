@@ -8,7 +8,7 @@ body {
 }
 
 
-/*---- Navbar ----*/
+/*------------------------- Navbar -------------------------*/
 
 .row {
   margin: 0;
@@ -31,7 +31,7 @@ body {
   margin-left: 20px;
 }
 
-/*---- Landing-Page ----*/
+/*--------------------------------- Landing-Page ---------------------------*/
 
 .landing-page {
   background-image: url("images/darth-vader-background.jpg");
@@ -43,7 +43,7 @@ body {
   color: #0091E3;
 }
 
-/*---- Sign-In ----*/
+/*------------------------------------ Sign-In ------------------------------------*/
 
 
 #user_name,
@@ -92,7 +92,7 @@ body {
   margin-right: 30px;
 }
 
-/*---- Sign-Up ----*/
+/*------------------------------- Sign-Up -----------------------------------*/
 
 .sign-up-page {
   background-image: url("images/yoda-background.jpg");
@@ -117,6 +117,7 @@ body {
 #username:focus,
 #password:focus,
 #email:focus,
+#image_url,
 #birthday:focus {
   border-bottom: 1px solid #00BC4E;
   box-shadow: 0 1px 0 0 #00BC4E;
@@ -127,6 +128,7 @@ body {
 #username,
 #password,
 #email,
+#image_url,
 #birthday {
   color:#00BC4E;
 }
@@ -144,34 +146,41 @@ body {
   border-bottom: 2px solid #00BC4E;  
 }
 
-/*---- Create-Post ----*/
+/*------------------------------ Create-Post ------------------------------------*/
 
 #title,
 #content {
-  color: #4D556F;
+  color: #D0FCFD;
+}
+
+.create-post-page {
+  background-image: url("images/millennium-falcon.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.create-post-page h4 {
+  color: #D0FCFD;
+  margin-top: 200px;
+  border-bottom: 1px solid #D0FCFD;
 }
 
 #title:focus,
 #content:focus {
-  border-bottom: 1px solid #4D556F;
-  box-shadow: 0 1px 0 0 #4D556F;
+  border-bottom: 1px solid #D0FCFD;
+  box-shadow: 0 1px 0 0 #D0FCFD;
 }
 
 .row .input-field input:focus {
   border-bottom: 1px solid #D0D0D0 !important;
   box-shadow: 0 1px 0 0 #D0D0D0 !important
 }
-
-
-.sign-up-link:link,
-.sign-up-link:visited {
-  font-size: 150%;
-  margin-left: 35px;
-  padding-bottom: 5px;
-  transition: border 0.2s;
-}
-
-
 
 .sign-up-link:hover,
 .sign-up-link:active {
@@ -192,8 +201,11 @@ body {
 }
 
 
+/*--------------------------- Signed-In Home-Page --------------------------------*/
+
+
 .home-page {
-  background-image: url("images/death-star.jpg");
+  background-image: url("images/Rogue-One-Death-Star.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -203,6 +215,21 @@ body {
   height: 100vh;
   overflow-y: hidden;
 }
+
+h1 {
+  color: #F9FF00;
+}
+
+.sign-up-link:link,
+.sign-up-link:visited {
+  font-size: 150%;
+  margin-left: 35px;
+  padding-bottom: 5px;
+  transition: border 0.2s;
+}
+
+
+/* ----------------------------- Profile --------------------------------------- */
 
 .profile {
   background-image: url("images/duel.png");
@@ -216,23 +243,7 @@ body {
   overflow-y: hidden;
 }
 
-.create-post-page {
-  background-image: url("images/millennium-falcon.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  height: 100vh;
-  overflow-y: hidden;
-}
-
-.create-post-page h4 {
-  color: #D0FCFD;
-  margin-top: 200px;
-  border-bottom: 1px solid #D0FCFD;
-}
+/* --------------------------- Settings-Page ----------------------------------- */
 
 .settings-page {
   background-image: url("images/bb8.jpg");
@@ -256,15 +267,21 @@ body {
   color: #F6FFFE;
 }
 
+/* ---------------------------- Card ---------------------------------- */
+
+.card:first-child {
+  margin-top: 20px;
+}
+
 .card {
-  background-image: url("images/space.png");
+  background-image: url("images/space.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  margin-top: 30px;
+  margin-top: 50px;
   padding: 0 5% 0 10%;
 }
 
@@ -294,6 +311,10 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+
+/* ---------------------------- Flash Info ----------------------------- */
+
 
 .flash {
   border-radius: 2px;
@@ -341,3 +362,5 @@ ul {
     transform: scale(1);
   }
 }
+
+

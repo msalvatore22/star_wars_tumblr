@@ -119,7 +119,6 @@ get "/settings" do
   end
 end 
 
-
 post "/settings" do
     @user = User.find(session[:user_id])
 
@@ -139,7 +138,18 @@ post "/settings" do
   end
 end
 
-
+put "/settings" do 
+  @user = User.find(session[:user_id])
+  @user.update(
+    first_name: params[:first_name], 
+    last_name: params[:last_name], 
+    username: params[:username], 
+    password: params[:password], 
+    email: params[:email], 
+    image_url: params[:image_url])
+    
+    redirect "/settings"
+end
 
 # when hitting this get path via a link
 #   it would reset the session user_id and redirect
