@@ -77,6 +77,7 @@ body {
 .landing-page {
   background-image: url("../images/darth-vader-background.jpg");
   height: 100vh;
+  overflow-y: hidden;
 }
 
 .landing-page h1 {
@@ -268,6 +269,19 @@ h1 {
   margin-left: 35px;
   padding-bottom: 5px;
   transition: border 0.2s;
+}
+
+.username-link:link,
+.username-link:visited {
+  font-size: 150%;
+  padding-bottom: 2px;
+  transition: border 0.2s;
+  color: #F9FF00;
+}
+
+.username-link:hover,
+.username-link:active {
+  border-bottom: 2px solid #F9FF00;  
 }
 
 .home-page-h3 {
@@ -489,4 +503,51 @@ ul {
   }
 }
 
+/* Small phones: from 0 to 480px */
+@media (max-width: 480px) {
+  .card {
+    margin-top: 50px;
+    padding: 0 5%;
+    border-radius: 20px;
+  }
+
+  .card-content {
+    color: #FEF300;
+    margin-left: 0;
+  }
+
+  .card-content>h3 {
+    font-size: 100%;
+  }
+
+  .card-content>h4 {
+    font-size: 90%;
+  }
+
+  .card-content>h5 {
+    font-size: 80%;
+  }
+
+  .home-page-h1 {
+    font-size: 40px;
+  }
+
+  .profile-h1 {
+    font-size: 40px;
+  }
+
+  .home-page-h3 {
+    font-size: 30px;
+  }
+
+  .profile-h3 {
+    font-size: 30px;
+  }
+
+  .landing-page h1 {
+    margin-top: 50px;
+    color: #0091E3;
+  }
+
+}
 
