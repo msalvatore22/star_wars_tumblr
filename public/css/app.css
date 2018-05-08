@@ -549,6 +549,11 @@ ul {
     color: #0091E3;
   }
 
+  .sign-up-page h1 {
+    margin-top: 50px;
+    color: #4caf50;
+  }
+
   .sign-in-h4 {
     margin-top: 80px;
   }
@@ -556,6 +561,11 @@ ul {
   .landing-page {
     overflow-y: scroll;
   }
+
+  .sign-up-page {
+    overflow-y: scroll;
+  }
+
 
   .sign-in-page {
     overflow-y: scroll;
