@@ -11,7 +11,7 @@
       <label>Password<input value="<%= @user.password %> "type="text" name="password" id="settings_password" required></label>
       <label>Email<input value="<%= @user.email %>" type="email" name="email" id="settings_email" required></label>
       <label>Image URL<input value="<%= @user.image_url %>" type="text" name="image_url" id="settings_image_url" required></label>
-      <input type="submit" value="Update">
+      <input id="settings-btn" type="submit" value="Update">
     </form>
   
 
@@ -20,7 +20,7 @@
     <form action="/settings" method="post">
       <input type="text" name="username" id="settings_username" placeholder="Username" required>
       <input type="password" name="password" id="settings_password" placeholder="Password" required>
-      <input type="submit" value="Delete Account"> 
+      <input id="settings-btn" type="submit" value="Delete Account"> 
     </form>
     
   </div>

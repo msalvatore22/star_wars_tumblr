@@ -19,7 +19,7 @@ end
 get "/" do
   if session[:user_id]
     @posts = Post.all
-    @user = User.all
+    @user = User.find(session[:user_id])
     erb :signed_in_homepage
   else
     erb :signed_out_homepage
@@ -177,6 +177,7 @@ put "/settings" do
     email: params[:email], 
     image_url: params[:image_url])
     
+    flash[:info] = "You have updated your account"
     redirect "/settings"
 end
 

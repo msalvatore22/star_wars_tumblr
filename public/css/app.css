@@ -8,6 +8,8 @@ body {
 }
 
 
+
+
 /*------------------------- Navbar -------------------------*/
 
 .row {
@@ -29,6 +31,44 @@ body {
 .star-wars-logo {
   margin-top: 10px;
   margin-left: 20px;
+}
+
+/*--------------------------------- Buttons ---------------------------*/
+
+#home-btn {
+  background-color: #F9FF00;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#profile-btn {
+  background-color: #81d4fa;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#create-post-btn {
+  background-color: #D0FCFD;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#sign-up-btn {
+  background-clip: #00BC4E;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#sign-in-btn {
+  background-color: #C2E1E9;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#settings-btn {
+  background-color: #ff9100;
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
 /*--------------------------------- Landing-Page ---------------------------*/
@@ -367,6 +407,7 @@ label {
   -o-background-size: cover;
   margin-top: 50px;
   padding: 0 5% 0 10%;
+  border-radius: 20px;
 }
 
 .card.horizontal .card-image img {
@@ -408,11 +449,11 @@ ul {
 }
 
 .flash.info {
-  background-color: #7cee7c;
+  background-color: #00BC4E;
 }
 
 .flash.warning {
-  background-color: #ee7c7c;
+  background-color: #ef5350;
 }
 
 .flash a, .flash a:link, .flash a:active, .flash a:visited {
