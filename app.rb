@@ -80,6 +80,7 @@ post "/sign-up" do
     username: params[:username],
     password: params[:password],
     email: params[:email],
+    image_url: params[:image_url],
     birthday: params[:birthday]
   )
 
