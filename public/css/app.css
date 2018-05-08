@@ -273,7 +273,7 @@ h1 {
 
 .username-link:link,
 .username-link:visited {
-  font-size: 150%;
+  font-size: 100%;
   padding-bottom: 2px;
   transition: border 0.2s;
   color: #F9FF00;

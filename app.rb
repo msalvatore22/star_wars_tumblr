@@ -194,3 +194,10 @@ get "/sign-out" do
   redirect "/"
 end
 
+
+get "/delete-post/:id" do
+  @post = Post.find(params[:id])
+  Post.destroy(@post.id)
+  redirect "/"
+end
+
