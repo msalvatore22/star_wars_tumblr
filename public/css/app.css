@@ -108,7 +108,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 100vh;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 .sign-in-h4 {
@@ -145,7 +145,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 100vh;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 .sign-up-page h1 {
@@ -204,7 +204,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 100vh;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 .create-post-page h4 {
@@ -255,7 +255,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 100vh;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 h1 {
@@ -312,7 +312,7 @@ h1 {
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 100vh;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 .profile-h1 {
@@ -346,7 +346,7 @@ h1 {
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 100vh;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 .user-profile-h1 {
@@ -367,7 +367,7 @@ h1 {
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 100vh;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 .settings-h4 {
