@@ -376,6 +376,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 93.1%;
+  overflow-y: scroll;
 }
 
 .settings-h4 {
