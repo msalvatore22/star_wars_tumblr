@@ -306,7 +306,7 @@ body {
 /* ----------------------------- Profile --------------------------------------- */
 
 .profile {
-  background-image: url("../images/duel.png");
+  background-image: url("../images/duel.resized.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
